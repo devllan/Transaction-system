@@ -1,0 +1,72 @@
+#search_bg{
+    height: 30px;
+    margin-bottom: 20px;
+}
+#search_ipt{
+    width: 190px;
+    height: 30px;
+}
+#search{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #169BD5;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#now{
+    height: 30px;
+    color: #81C0FF;
+    border-bottom: 2px solid #81C0FF;
+}
+#his_tab1{
+    width: 500px;
+    margin-top: 5px;
+    float: left;
+}
+#his_tab1 td{
+    border: 1px solid #999;
+}
+#his_tab2 td{
+    border: 1px solid #999;
+}
+#tab1_header{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #81C0FF;
+}
+#his_tab1 td{
+    text-align: center;
+    color: #333;
+}
+#his_tab2{
+    width: 500px;
+    margin-top: 5px;
+    float: left;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+#tab2_header{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #81C0FF;
+}
+#his_tab2 td{
+    text-align: center;
+    color: #333;
+}
+#show_img{
+    margin-top: 150px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+#show_img img{
+    padding: 2px 12px;
+    width: 155px;
+    height: 200px;
+}

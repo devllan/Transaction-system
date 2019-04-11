@@ -1,0 +1,80 @@
+#header{
+    background-color: #4D87CE;
+}
+#span1{
+    display: inline-block;
+    font-size: 22px;
+    color: white;
+    cursor: default;
+}
+#span2{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    cursor: default;
+    margin-left: 10px;
+}
+#left_nav{
+    background-color: #81C0FF;
+}
+#left_nav a{
+    font-family: "黑体";
+    font-size: 20px;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding-left: 37px;
+}
+#left_nav a:hover{
+    background-color: #4D87CE;
+}
+#left_bg{
+    background-color: #81C0FF!important;
+}
+#footer_text{
+    text-align: center;
+}
+#nav_li1{
+    background-image: url(../images/u6.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+#nav_li2{
+    background-image: url(../images/u8.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+#nav_li3{
+    background-image: url(../images/u10.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+#nav_li4{
+    background-image: url(../images/u12.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+#nav_li5{
+    background-image: url(../images/u14.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+#nav_li6{
+    background-image: url(../images/u44.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+#body_p{
+    font-size: 25px;
+    color: #999;
+    text-align: center;
+    margin-top: 200px;
+}
+#logo_text{
+    width: 240px;
+}

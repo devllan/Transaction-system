@@ -1,0 +1,74 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/home2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#down{
+    position: fixed;
+    right: 30px;
+    bottom: 0px;
+    color: #979898;
+}
+#content{
+    width: 100%;
+    height: 350px;
+    position: fixed;
+    top: 28%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#con_img{
+    width: 502px;
+    height: 63px;
+    position: relative;
+    top: 65px;
+    left: 240px;
+}
+#login{
+    width: 300px;
+    /* height: 100%; */
+    position: absolute;
+    top: 70px;
+    right: 300px;
+    /* background-color: white; */
+    color: #979898;
+}
+#login span{
+    display: inline-block;
+    width: 78px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    border-right: 1px solid #999;
+}
+#login input{
+    border: none;
+    outline-style:none;
+
+}
+#username{
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+#userpwd{
+    height: 35px;
+    line-height: 35px;
+    border-radius: 15px;
+    background-color: white;
+}
+#submit{
+    display: block;
+    width: 120px;
+    height: 35px;
+    margin: 0 auto;
+    background-color: #3ed7f0;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 40px;
+    border-radius: 18px;
+}

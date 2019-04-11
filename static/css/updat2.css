@@ -1,0 +1,19 @@
+#search_bg{
+    height: 30px;
+    margin-bottom: 20px;
+}
+#search_ipt{
+    width: 190px;
+    height: 30px;
+}
+#search{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #169BD5;
+    margin-left: 10px;
+    border-radius: 10px;
+}

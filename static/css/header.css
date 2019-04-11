@@ -1,0 +1,31 @@
+#header{
+    position: relative;
+    width: 100%;
+    height: 8%;
+    background-color: #3ed7f0;
+}
+#sant{
+    width: 30px;
+    height: 20px;
+    margin-top: 18px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+#span1{
+    display: inline-block;
+    position: absolute;
+    left: 170px;
+    top: 10px;
+    font-size: 22px;
+    color: white;
+    cursor: default;
+}
+#span2{
+    display: inline-block;
+    position: absolute;
+    left: 250px;
+    top: 15px;
+    font-size: 18px;
+    color: white;
+    cursor: default;
+}

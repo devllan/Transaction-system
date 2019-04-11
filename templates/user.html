@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>铸保 医疗保险事务系统</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/css/index_new.css">
+    <link rel="stylesheet" href="../static/css/user.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header" id="header">
+            <div class="layui-logo" id="logo_text">
+                <span id="span1">铸保®</span>
+                <span id="span2">医疗保险事务系统</span>
+            </div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <!-- <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">控制台</a></li>
+      <li class="layui-nav-item"><a href="">商品管理</a></li>
+      <li class="layui-nav-item"><a href="">用户</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+    </ul> -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="../static/images/userimg.png" class="layui-nav-img">
+                        {{request.user}}
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">安全退出</a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black" id="left_bg">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test" id="left_nav">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="./index.html" id="nav_li1">首页</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;" id="nav_li2">单证上传</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="./updata1.html">单案件模式</a></dd>
+                            <dd><a href="./updata2.html">上传历史列表</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;" id="nav_li3">手动分拣</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;" id="nav_li4">智能录入</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="./user.html" id="nav_li5">账户管理</a>
+                        <!-- <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">完善资料</a></dd>
+                            <dd><a href="javascript:;">更改密码</a></dd>
+                        </dl> -->
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;" id="nav_li6">资料查询</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;">列表一</a></dd>
+                            <dd><a href="javascript:;">列表二</a></dd>
+                            <dd><a href="">超链接</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <!-- <div style="padding: 15px;">内容主体区域</div> -->
+            <div class="layui-tab layui-tab-card">
+                <ul class="layui-tab-title">
+                    <li class="layui-this" id="xguser">修改账户</li>
+                    <li id="deluser">删除账户</li>
+                    <li id="adduser">开设账号</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item  layui-show">
+                        <form action="" class="layui-form">
+                            <div id="zhucefk">
+                                <h2 class="h2">修改密码</h2>
+                                旧密码:<input type="password" class="tupe name" id="xgname">
+                                新密码:<input type="password" class="tupe pwd" id="xgpwd">
+                                确认密码:<input type="password" class="tupe pwd" id="xgpwd2">
+                                <a href="javascript:;" class="regd" id="xgregd">确认修改</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="layui-tab-item">
+                        <table id="tbtable" border="0" cellpadding="0">
+                            <tr id="tbhead">
+                                <td>账户名</td>
+                                <!-- <td>邮箱</td> -->
+                                <td>上次登录时间</td>
+                                <td>账户类型</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="layui-tab-item">
+                        <form action="" class="layui-form">
+                            <div id="zhucefk">
+                                账号名称:<input type="text" class="tupe name" id="zcname" placeholder="可以使用英文和数字，用户名不宜过长">
+                                <!-- 邮箱:<input type="text" class="tupe pwd" id="zcyx"> -->
+                                密码:<input type="password" class="tupe pwd" id="zcpwd">
+                                确认密码:<input type="password" class="tupe pwd" id="zcpwd2">
+                                <h4>账户类型：</h4>
+                                <select name="interest" lay-filter="select" id="select">
+                                    <option value="wxz" selected="" id="wxz"></option>
+                                    <option value="1">管理账户</option>
+                                    <option value="2">普通账户</option>
+                                    <!-- <option value="3">访客账户</option> -->
+                                </select>
+                                <a href="javascript:;" class="regd" id="zcregd">增加用户</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-footer" id="footer_text">
+            <!-- 底部固定区域 -->
+            北京数美科技有限公司©
+        </div>
+    </div>
+    <script src="../static/layui/layui.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+    </script>
+</body>
+
+</html>
